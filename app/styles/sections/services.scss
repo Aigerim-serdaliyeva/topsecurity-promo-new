@@ -1,0 +1,218 @@
+.services {
+	&-wrap {
+    background-color: #f7f7f7;
+    padding: em(66) 0 em(75);
+    overflow: hidden;
+  }
+  &-text {
+    font-size: em(18);
+    color: $colorDark;
+    text-align: center;
+    margin: em(20, 25) 0 em(24,25);
+  }
+  
+  &-list {
+    display: flex;
+    padding: 0;
+    margin: 0 em(-5);
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &-item {
+    padding: em(5);
+  }
+}
+.service {
+  margin: 0;
+  border: 1px solid #8A8A8A;
+  border-radius: em(20);
+  transition: .3s;
+  &:hover,&:focus,&:focus-within {
+    box-shadow: 0 5px 10px rgba(0,0,0,.41);
+  }
+  &-label {
+    display: block;
+    text-align: center;
+    font-family: $ffHeader;
+    padding: em(5) 0 em(21);
+  }
+  &-img {
+    max-width: 100%;
+  }
+  &-link {
+    color: $colorDark;
+    text-decoration: none;
+    font-size: em(24);
+  }
+}
+@media (min-width: 760px) {
+  .services {
+    &-text {
+      font-size: em(25);
+    }
+  }
+  .service {
+    &-link {
+      font-size: em(30);
+    }
+  }
+}
+
+.services__container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .services__block {
+      height: 100%;
+      width: 49%;   
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 20px;
+      border: 1px solid #878787;
+      cursor: pointer;
+      .services__block__title {
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 30px;
+        line-height: 30px;
+        font-family: Bebas Neue;
+        padding: 20px 0;
+      }
+      .services__block__content {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        height: 250px;     
+        button {
+          display: none;
+        }
+        .services__block__image {
+          width: 40%;
+          height: 100%;         
+          display: flex;          
+          transform: translateX(160px);          
+          align-items: center;
+          flex-direction: column;
+          transition: 0.4s;
+          @media screen and (max-width:960px) {
+            transform: translateX(0);
+          }
+          img {
+            width: 190px;
+            margin: auto;
+          }
+        }
+        .services__block__text {
+          width: 60%;
+          height: 100%;  
+          transform: translateX(100%);      
+          color: #000;
+          font-family: Montserrat;
+          line-height: 18px;
+          font-weight: 500;
+          transition: 0.4s;
+          @media screen and (max-width:960px) {
+            transform: translateX(0);
+            opacity: 1 !important;
+          }
+          span {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+}
+
+@media screen and (max-width: 920px) {
+  .services__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;  
+    .services__block {
+      width: 100%;
+      margin-bottom: 20px;     
+      
+      .services__block__content {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 20px;    
+        button {
+          display: block;
+          outline: 0;
+          border: none;          
+          font-size: 1.35em;   
+          color: #fff;
+          background-color: #FFB800;
+          border-color: transparent;   
+          border-radius: 100px;
+          margin: 40px 0 0;
+          padding: 0.3em 2em;
+        }    
+        .services__block__image {
+          width: 100%;
+        }
+        .services__block__text {
+          width: 90%;
+          padding-top: 20px;
+          margin: auto;                    
+        }
+
+      }
+    }
+  }
+  .text-dn {
+    display: none;
+  }  
+}
+
+.op0 {
+  opacity: 0;
+}
+
+.spec {
+  margin-top: 0.5em; 
+}
+.spec-text {
+  display: flex;  
+  align-items: center;
+  transform: translateX(0px) !important;
+  opacity: 1 !important;
+  text-align: center;
+}
+
+#spec {
+  height: 220px;
+  margin: 0 auto;
+  pointer-events: none;
+  @media (max-width: 960px) {
+    height: 380px;
+  }
+}
+
+
+
+.spec-image {
+  transform: translate(0px) !important;
+  background: url('assets/media/images/content/spec-dat.jpg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 30px;
+  img {
+    display: none;
+    @media (max-width: 960px) {
+      display: block;
+    }
+  }
+}
+
+.spec__title {  
+  text-align: center;
+  color: #252525;
+  font-family: "Montserrat"
+}

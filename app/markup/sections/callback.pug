@@ -1,0 +1,21 @@
+mixin callback() 
+  section.callback-wrap.anim.slide-in-bot#callback.spy-it
+    .container
+      .callback
+        .callback-title Нужна консультация?
+        .callback-desc Заполните поля, и мы Вам перезвоним!
+        form.callback-form.ajax-form
+          .input
+            label.input-label(for="callback_name")
+              i.input-label-icon.input-label-icon--user
+              span Ваше имя
+            input.input-value(type="text", required, id="callback_name", name="name")
+          .input
+            label.input-label(for="callback_phone") 
+              i.input-label-icon.input-label-icon--phone
+              span Номер телефона
+            input.input-value(type="text", data-mask="8(000)000-00-00", required, id="callback_phone", name="phone")
+          .input.callback-end
+            button.btn.btn--primary(type="submit" onclick="dataLayer.push({'event': 'footer-call'})") Заказать
+          .callback-form-message.callback-form-message--success Ваше сообщение отправлено!
+          .callback-form-message.callback-form-message--error Ошибка при отправке запроса!
