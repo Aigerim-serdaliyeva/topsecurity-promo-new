@@ -838,7 +838,7 @@ body {
   padding-left: 0.3125em; }
   .no-webp .hero-wrap {
     background-image: url("assets/media/images/shared/promo-second-bg.jpg"); }
-  .webp .hero-wrap {
+  .hero-wrap {
     background-image: url("assets/media/images/shared/promo-second-bg.webp"); }
   .hero-wrap {
     background-size: cover;
@@ -1853,7 +1853,7 @@ body {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 0.41667em; }
+    margin-bottom: 0.27778em; }
 
 @media (min-width: 760px) {
   .benefits {
@@ -2229,7 +2229,8 @@ body {
     right: 0;
     top: 30%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+            transform: translateY(-50%);
+    display: none; }
   .testimonials-arrow {
     position: absolute;
     background-image: url("assets/media/images/shared/testi-arrow.svg");
@@ -2307,7 +2308,8 @@ body {
     font-weight: 400;
     display: block;
     line-height: 1;
-    margin-top: 0.6em; }
+    margin-top: 0.6em;
+    margin-bottom: 7px; }
   .testimonial-company {
     line-height: 1;
     font-family: "Bebas Neue", sans-serif;
@@ -2318,9 +2320,10 @@ body {
     text-align: center;
     padding-bottom: 0.1em;
     border-bottom: 1px dashed;
-    position: relative; }
+    position: relative;
+    margin-bottom: 7px; }
   .testimonial-text {
-    font-size: 0.875em;
+    font-size: 16px;
     margin: 0.4em 0;
     font-weight: 300;
     text-align: center; }
@@ -2329,7 +2332,8 @@ body {
   .testimonials {
     padding: 1.6875em 3.4375em; }
     .testimonials-arrows {
-      top: 50%; }
+      top: 50%;
+      display: block; }
     .testimonials-arrow {
       width: 35px;
       height: 71px;
@@ -2338,9 +2342,10 @@ body {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    margin-bottom: 10px; }
     .testimonial-quote {
-      margin: 0 0 0 3.125em; }
+      margin: 0 2.5em; }
     .testimonial-company {
       font-size: 1.25em;
       text-align: left; }
@@ -2367,14 +2372,16 @@ body {
       margin-top: 0; } }
 
 @media (min-width: 960px) {
-  .testimonial-text {
-    font-size: 1.5625em; }
-  .testimonial-author {
-    font-size: 2.5em; } }
+  .testimonial {
+    margin-bottom: 20px; }
+    .testimonial-text {
+      font-size: 16px; }
+    .testimonial-author {
+      font-size: 2.5em; } }
 
 @media (min-width: 1070px) {
   .testimonials {
-    padding: 1.6875em 8.5em; } }
+    padding: 1.6875em 1.5625em; } }
 
 .w-100 {
   width: 100%; }

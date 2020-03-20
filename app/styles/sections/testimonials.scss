@@ -18,6 +18,7 @@
     right: 0;
     top: 30%;
     transform: translateY(-50%);
+    display: none;
   }
   &-arrow {
     position: absolute;
@@ -93,6 +94,7 @@
     display: block;
     line-height: 1;
     margin-top: em(15,25);
+    margin-bottom: 7px;
   }
   &-company {
     line-height: 1;
@@ -105,9 +107,10 @@
     padding-bottom: em(2,20);
     border-bottom: 1px dashed;
     position: relative;
+    margin-bottom: 7px;
   }
   &-text {
-    font-size: em(14);
+    font-size: 16px;
     margin: em(10,25) 0;
     font-weight: 300;
     text-align: center;
@@ -118,6 +121,7 @@
     padding: em(27) em(55);
     &-arrows {
       top: 50%;
+      display: block;
     }
     &-arrow {
       width: 35px;
@@ -127,8 +131,9 @@
   }
   .testimonial {
     flex-direction: row;
+    margin-bottom: 10px;
     &-quote {
-      margin: 0 0 0 em(50);
+      margin: 0 em(40);
     }
     &-company {
       font-size: em(20);
@@ -161,8 +166,9 @@
 }
 @media (min-width: 960px) {
   .testimonial {
+    margin-bottom: 20px;
     &-text {
-      font-size: em(25);
+      font-size: 16px;
     }
     &-author {
       font-size: em(40);
@@ -171,7 +177,7 @@
 }
 @media (min-width: 1070px) {
   .testimonials {
-    padding: em(27) em(136);
+    padding: em(27) em(25);
     &-wrap {
     }
   }

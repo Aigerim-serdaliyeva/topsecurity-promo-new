@@ -90,6 +90,8 @@ gulp.task('watch', ['browserSync', 'scss', 'js', 'pug'], function(){
     .on('error', notify.onError((error) => error));
   gulp.watch('app/**/**.pug', ['pug'])
     .on('error', notify.onError((error) => error));
+  gulp.watch('app/**/**.json', ['pug'])
+    .on('error', notify.onError((error) => error));
   gulp.watch('app/**/**.js', ['js'])
     .on('error', notify.onError((error) => error));
 })

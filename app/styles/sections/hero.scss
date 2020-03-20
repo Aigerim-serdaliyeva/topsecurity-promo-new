@@ -61,7 +61,7 @@
   .no-webp &-wrap {
     background-image: url($imgPath+'promo-second-bg.jpg');
   }
-  .webp &-wrap {
+  &-wrap {
     background-image: url($imgPath+'promo-second-bg.webp');
   }
   &-wrap {   
