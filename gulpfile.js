@@ -100,7 +100,7 @@ gulp.task('image', function () {
     .pipe(image())
     .pipe(gulp.dest('app/assets/media/images'));
 });
-gulp.task('build', () => {
+gulp.task('build', ['pug', 'scss', 'js'], () => {
   gulp.src('app/mailer/**/*')
     .pipe(gulp.dest('dist/mailer'));
   gulp.src('app/*.php')
